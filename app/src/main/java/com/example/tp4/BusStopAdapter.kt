@@ -17,7 +17,7 @@ class BusStopAdapter(private var busStops: List<Schedule>, private val onItemCli
 
     fun Long.toTimeDateString(): String {
         val dateTime = java.util.Date(this)
-        val format = SimpleDateFormat("HH:mm:ss dd/MM/yyyy", Locale.US)
+        val format = SimpleDateFormat("HH:mm:ss", Locale.US)
         return format.format(dateTime)
     }
 
